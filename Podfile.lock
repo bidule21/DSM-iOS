@@ -1,0 +1,25 @@
+PODS:
+  - Socket.IO-Client-Swift (4.1.0)
+  - SwiftyJSON (2.3.1)
+  - XLForm (3.0.1)
+
+DEPENDENCIES:
+  - Socket.IO-Client-Swift (~> 4.1.0)
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+  - XLForm (= 3.0.1)
+
+EXTERNAL SOURCES:
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  SwiftyJSON:
+    :commit: 646f7e8813e6627bd9b09c77d5e775b67988de72
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  Socket.IO-Client-Swift: 5df2c55d5c0a4f283543d6b8e3e94f55c0527c77
+  SwiftyJSON: 592b53bee5ef3dd9b3bebc6b9cb7ee35426ae8c3
+  XLForm: 1a20da41c009e4f99e802e886a8eef5f2b086644
+
+COCOAPODS: 0.39.0

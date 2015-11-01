@@ -1,0 +1,1216 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00D122C68E52B5F2DB4F154B6AF567D4 /* UIView+XLFormAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 962BD3A1BEC1A23C872008891C42D32C /* UIView+XLFormAdditions.m */; };
+		03A94F82911AE6A7CB3948692F7B30D4 /* XLFormDatePickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C561CB1E844ACC718BFF3BB0D4510D /* XLFormDatePickerCell.m */; };
+		054FDC72BB1FB46901DC07395702C15E /* XLFormLeftRightSelectorCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FB9FAB0FD9B62025236D9D478CB6A17 /* XLFormLeftRightSelectorCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05C794A145C820D8E4106685FFACDB72 /* XLFormRegexValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 786CCDB126351AB5E335A3DCCA1C20A1 /* XLFormRegexValidator.m */; };
+		067E8A9BA463BE560935125DEB6F9937 /* XLFormRowDescriptorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB23ED9441AA1568BEEA2D20957BBAFA /* XLFormRowDescriptorViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0722314D81186044122462610E17E9D1 /* NSPredicate+XLFormAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EC680D62573682E0FC52AFBDDB080B0F /* NSPredicate+XLFormAdditions.m */; };
+		0B59DF37CF096A903905736B9247BEA0 /* SocketIOClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686E5BC50E5C600BBBADA38030DDF220 /* SocketIOClient.swift */; };
+		0C4C4CD055380F815DE6720E163B5C76 /* XLForm.h in Headers */ = {isa = PBXBuildFile; fileRef = 9730E50488F32475617CF3E474402C43 /* XLForm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E9B2E83B3793C88E61A651E623863D1 /* XLFormInlineSelectorCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 40FB63875D9FF914A2B8AD549DF9C136 /* XLFormInlineSelectorCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1078680AEE42D1E656A2463BD0D0CFE9 /* XLFormRowNavigationAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1878573DB1F4C2FE0BC48079D59127 /* XLFormRowNavigationAccessoryView.m */; };
+		17E8DBC563815A3B46A2EBF90C9AB3FE /* XLFormLeftRightSelectorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7649A1B7B4306EAE979CBB6305692A79 /* XLFormLeftRightSelectorCell.m */; };
+		186341289B1B00526E0659D99A7EF545 /* XLFormRowDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FE2853F45F24A00A4898E4E4CF236FD /* XLFormRowDescriptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A75E591737057C360CABCCEC3DCD8D7 /* XLFormTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8912D87C88450BE62CDE64F6B4BB2611 /* XLFormTextViewCell.m */; };
+		1B6255BD31EA5AA5D2B50AEE98DC65AF /* NSArray+XLFormAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0398D0AFCE39AD4E356598CCBF8C4B7D /* NSArray+XLFormAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D6F2658772BC1571CD4B8291D09354C /* XLFormRightDetailCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BD3279220EB6E1FBE9D3D034BEA85DB /* XLFormRightDetailCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25A355D36EFAD5212A3A83B50F77D104 /* Socket.IO-Client-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BD224372A607C72CB64B902596E710 /* Socket.IO-Client-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2856FDA1A7D3263CF2ACE1D6F7C56AF5 /* SocketEngineSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D8B1591EBC13D16B6DA447D609E45E /* SocketEngineSpec.swift */; };
+		286F9CF6E02AA7D5D4E8726F7BCDF42F /* XLFormSectionDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D350D8CFC327D1B7985F4F6C0600926 /* XLFormSectionDescriptor.m */; };
+		28A8664AA88FBE31489B23813495E9EA /* XLFormOptionsObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B236E1F6CC4FED89A1BE16591B565665 /* XLFormOptionsObject.m */; };
+		2B9CDBB86A4B2D387098276861109287 /* NSPredicate+XLFormAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B5B45293C4D77BCB9255787E7524A5CB /* NSPredicate+XLFormAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CBF2A23F805AEFEAFEAB4951ACCCA43 /* XLFormValidatorProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = B3D8363BF24FADC7F201E95815ACCA70 /* XLFormValidatorProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CEDD5796654AEC8CBBC4B546EAC9EFF /* XLFormSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F2D44064B133245C3A1199DA963254 /* XLFormSwitchCell.m */; };
+		2FAA3A04B5D31B1A415C1A8EF43B9458 /* XLFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8954B7493A6AFBD374A68DC58DA0B0 /* XLFormViewController.m */; };
+		358B5668B0973DC14731E9B1DB4F715A /* XLFormButtonCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BF0F7445FF5B27813802F1C00C95277 /* XLFormButtonCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B7FF88E2EF4247E554D2FF04DA8ECC4 /* XLFormSegmentedCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 27DDE1552820268173A5CA2A9E0EBC9A /* XLFormSegmentedCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BE4F113E32E044283F62F6C7E80E161 /* XLFormInlineSelectorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC572ACC6F8B0FF8FD5B949D26E050DE /* XLFormInlineSelectorCell.m */; };
+		3F66797207EFBB09DE416B320A7B5B46 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B3C2F7A60189AA38D256A0120B8730 /* CoreGraphics.framework */; };
+		4620F5F300DBB13E27D17F5B6DCE2414 /* XLFormBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D22A789DD141EAD79535332B357C1178 /* XLFormBaseCell.m */; };
+		476B49DD3F8549895865358F918C2D91 /* XLFormDescriptorCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B2E05660FD1C41721DAD15BC04FB0783 /* XLFormDescriptorCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47FDED6567642DFC5EBD256D152447FA /* XLFormRightImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDF1745F8981406EEA1AA97B41398EB /* XLFormRightImageButton.m */; };
+		4FC7CF8F43DD6D97FF8A3374E1D0C7DA /* XLFormDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8A8FAB00CCB846E033E80FE6E5B63C /* XLFormDescriptor.m */; };
+		507307F7E1BAA0DEC52893C6FF69E244 /* XLFormOptionsObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 70E9E437794F154ACCE18D87BE83EF45 /* XLFormOptionsObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50B1BF7A3D9AA48F62F1F63E3D67973F /* SocketEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C024A0E6B598C26C41499355CE3734 /* SocketEventHandler.swift */; };
+		51A3501B62B55377BFE25DD46081C7E0 /* XLFormRowDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 859C1686EA9A975E37983ECC2B42C0B0 /* XLFormRowDescriptor.m */; };
+		5771B91D18F3951CC411EF6D31AE1B95 /* XLFormSwitchCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 284AE9D97C316B78F190F4FD5AEC0DD2 /* XLFormSwitchCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		578B7BCA865B9E6B1FD5A120B5130747 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F79ACD206D7284CF469DA6B24AFACE9 /* UIKit.framework */; };
+		594FBF11308F8478EE15B0AB2D756115 /* XLFormStepCounterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F04F9D71EC1C02C042EF86AA4BAF7208 /* XLFormStepCounterCell.m */; };
+		5E67A50F899DF055757396E5D080F24E /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038A4DBA25762984C64A2E5D122384B0 /* WebSocket.swift */; };
+		5F7030F68750753CB0B4B5A4EF35881A /* SocketEngineClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E466DEC69CFFF1754CEAB3337CFEA61 /* SocketEngineClient.swift */; };
+		6723853ADB7B0D9E4FA154D0A653BE29 /* XLFormRegexValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 21F97402378705E17263CB886F9FED1A /* XLFormRegexValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EEC40C2FB97079EC5657595DD0A7F82 /* NSExpression+XLFormAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4394028FC2B379244EDC6C90C8041893 /* NSExpression+XLFormAdditions.m */; };
+		74021CC60A6A0446B2EBCF8D9F16E7DE /* XLFormButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DC236C4CE49624443A8E303614147 /* XLFormButtonCell.m */; };
+		774E2E3A2677589C43FA3AEEB63A9241 /* XLFormRightDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0BBCE8450BD818ACBAA05CADFA1157 /* XLFormRightDetailCell.m */; };
+		7788D4D9528C3FF79BA6B40B1AD2A60E /* SocketAnyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE05644226B5DC837B09F5E62DE2DA4 /* SocketAnyEvent.swift */; };
+		7B5472862E476763660234E255946A61 /* XLFormSegmentedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB16E4D370BAB1778ED14086C9B8F98 /* XLFormSegmentedCell.m */; };
+		807D6D94D1412DB4098989DC62AEC796 /* XLFormSliderCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 911886C6452DFE6C6CE0A71598CE2261 /* XLFormSliderCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80F5229D59134DE9497F1E58F839DAA1 /* SocketIOClientOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21EDE0A35C50B2CB711F896CEAD94BE /* SocketIOClientOption.swift */; };
+		81417DC1F0F7BC76A194EC2D4E8940CA /* XLFormDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8503200FA34E9E892E952C4D74A57575 /* XLFormDateCell.m */; };
+		81EF80602C49A7132AD446D2D70E0669 /* XLFormValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 65792930709BDCCDAD85FE68A79A9066 /* XLFormValidator.m */; };
+		89B7F159A602C21455F672A32C145405 /* XLForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F0D2273B139E83F16C84D96FD64866 /* XLForm.m */; };
+		8CBEE0B3B9A9FAC2485587DA4268EB11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */; };
+		8FD341A0E105C58D838E84C1FED93016 /* XLFormDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = BB123F0D10EF5D70FF82B04348B0BFBC /* XLFormDescriptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		920A305190C486592F48BCF79A0CADD2 /* SocketTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F75D804608C3CD8F111F445FCDAFCFE /* SocketTypes.swift */; };
+		92220D0C9D1A45CFC2E0CF8EC4192743 /* XLFormOptionsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D847D93686648236CAD8D38C84915A8 /* XLFormOptionsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92DE1E8FD71454FFF118F79004C07358 /* XLFormValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6429A7CC34461C2B5C908960BB84671D /* XLFormValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95E52F64DEB329AB17801AB0B82FEDCA /* SocketPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC797E5F90CB7484193A2ED090CDA6D /* SocketPacket.swift */; };
+		9650D5481852E335897DE46A12070605 /* XLFormTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BE4F6F477527FCFB099B298C7EA4AEF /* XLFormTextFieldCell.m */; };
+		97885F5764DE8CA2C449849F4D80A93B /* XLFormViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = EDEAA180F35E8682DB84E7F1365AE0F7 /* XLFormViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		985B49CE3F0313EB0BF8B0A9648AC6DD /* XLFormRowNavigationAccessoryView.h in Headers */ = {isa = PBXBuildFile; fileRef = C485D05E0C31387ADB74153F7275DBF7 /* XLFormRowNavigationAccessoryView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		991F7D4292BEC73D0FB9033C85F7EEC5 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D46642519FF5D90C2BE07F0688DBF48 /* SwiftyJSON-dummy.m */; };
+		9A8CBA6105E377A73AD1D5400B9AB23F /* NSExpression+XLFormAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B2BD104277DA17CBEA3125F645A26C3 /* NSExpression+XLFormAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B865E7043C73580788D32149A28339D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */; };
+		9D4887ABD303A75683B52541212CCC36 /* XLForm.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AC73C149042E527F22C430E5536A3AE9 /* XLForm.bundle */; };
+		9E1808C4D1B30EF21428D8B7CDF1BB1C /* SocketEnginePacketType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E976C8F41182007A5862A74B27E2D3 /* SocketEnginePacketType.swift */; };
+		A09FA655357838B1413C1D28F10A1C81 /* XLFormRightImageButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 976FFAF04BAF415E4F9C5C1DFF1A1DA7 /* XLFormRightImageButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A16AE54472A00407F4CF9C4CD4D0CE4C /* XLFormDatePickerCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 123765287DD5C8C54B53C6CCC1FA5489 /* XLFormDatePickerCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4BA8DDECEDBDF61C4D9DF00C2CA6C5A /* XLFormInlineRowDescriptorCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B83DDEDB3B95789CC3B432D92493937 /* XLFormInlineRowDescriptorCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A67159396E61C1B9C959809B8ADC904A /* XLFormTextFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 52B239576CBF1CF766F2E9036AFD0BFF /* XLFormTextFieldCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A747A35D2E79DAD01F963F23F603FF3A /* XLFormCheckCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A4470C71BCC56BEDC14C2B1627ACD8 /* XLFormCheckCell.m */; };
+		B06ECC71B5E28798F6931480BE1DD12A /* SocketEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5063E44C5A67C4C265D28C2CDF4900F /* SocketEngine.swift */; };
+		B18126C13921A4F4BF0BEE1F3E51C80B /* XLFormOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 077B77E9ED4B1E09DAE27B29954F80D6 /* XLFormOptionsViewController.m */; };
+		B2263733C3AE005B16D4E040A947CDE7 /* XLFormStepCounterCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 22ED23A1F4DB2384C48C24B4E4CA6764 /* XLFormStepCounterCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B351F3580FA9B1E3A6B0A124E94B5F87 /* XLFormSliderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE15353F807C7E65DC2C8E6030539DED /* XLFormSliderCell.m */; };
+		B3600D7ACBA27609AEE2D5FCC910AD4C /* SocketLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF93C0577B508FACBD94C1AF6868587 /* SocketLogger.swift */; };
+		B78B7D28794C9D6FFA37FE2ACBF71F26 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90ADCE360385DA55C5347ACB163AB534 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7AA51AF165F2D38EE38B5C7D748A479 /* SocketFixUTF8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402F3A0EAD69943FBBCA461FFA004459 /* SocketFixUTF8.swift */; };
+		B8E96E43C2B2CFF65FC8ADB9CF992168 /* XLFormDateCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 52865DD0D0F29DEDA0D798F274B239DA /* XLFormDateCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B91B878D288F86478DF9814FF2659AA1 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31C7B0D1332BFD57B1A461AB31BA8F8 /* SwiftyJSON.swift */; };
+		BD6C03F1358F986C78D22B9881BB2C4E /* XLFormDescriptorDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 325AA35F30B6A57F2501C7C77008DCD3 /* XLFormDescriptorDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDCD688A2C2903473AD27473EEEAD526 /* NSObject+XLFormAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 19F5B4E850EFD3A6EB197F8DB534FD60 /* NSObject+XLFormAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1CE0754629261248685937CA0289342 /* XLForm-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87FC4114F882F53167A84BCA2E2F5F3E /* XLForm-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2C625F702C806AA22DC8221EB95DBC7 /* SocketAckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D01AD718DE69D61F00BFA0C9210C66 /* SocketAckManager.swift */; };
+		C2D613B620FD3B625F1E04BCA414817D /* XLFormValidationStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = C2681F81DC929C7D3425B087E4E6BF32 /* XLFormValidationStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C65D72C3FEBBA8A6C1FF3613E29AB244 /* Socket.IO-Client-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6575E91AE27538F69C42C54479942C /* Socket.IO-Client-Swift-dummy.m */; };
+		CBC708A48BC7D99D056772D6EF57EBDA /* SwiftRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4ADA856F31D773D350005C064CB367 /* SwiftRegex.swift */; };
+		CC997D813175597944D4A9B301D06608 /* XLFormSectionDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 898FAB4950D5EC47366B036F095D3084 /* XLFormSectionDescriptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE55937D023CAD9F855876D9BE37ED94 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF711D830C2D5A70E000046A886E8854 /* SocketStringReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929A6C58E7A71187E11F36576DE449A5 /* SocketStringReader.swift */; };
+		D193501378E2D693070D57100F992C23 /* XLFormTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CDC438A3C5AE4A19B45EB15E0A61334 /* XLFormTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D49D1FD91E098208E4A0C97FD870B920 /* SocketIOClientStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7B9641BDED9B685F43E6CAA4AE5DA /* SocketIOClientStatus.swift */; };
+		D546ADE125700B2C4EDAEA89DA6733D0 /* NSArray+XLFormAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FB63AE453CCBDFDCA92C05D555F594 /* NSArray+XLFormAdditions.m */; };
+		DA4197CEC2EEB5B8909BC43CEB4B5C52 /* XLFormBaseCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E928F238BE972D1A359A16A4DC85F7AA /* XLFormBaseCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF67C56264DC0306133235B021FD383F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */; };
+		E003F3657AEF7121E9425F70FA496E63 /* XLFormValidationStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5DB282EA5F8B6EA5C4CE535A39DED9 /* XLFormValidationStatus.m */; };
+		E00A39E8593196E86C1397DEC217EDDA /* XLFormCheckCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B65F579A4688C332E6F54FEC61C05FFF /* XLFormCheckCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E08966247D6165230CBB9E97BA22AA06 /* NSString+XLFormAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B42825FB0B5A3D416781119FF8C22B /* NSString+XLFormAdditions.m */; };
+		E0E7E00028497B4D3ABF86F943E365D8 /* XLFormPickerCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D9195AD94E1DC270564C041CE382CEF2 /* XLFormPickerCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4156932505726D69F4C1207ABBC4B4D /* XLForm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CCC8DC9ADC59906A8D1A6AD257BF5E /* XLForm-dummy.m */; };
+		E4838F6B8AF72DACFD27D9FE86F3A8CB /* XLFormSelectorCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 822DBCF4ADE3DF76A2E88ADCF1ECDFA8 /* XLFormSelectorCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5790A3F540500C3DD36A62FAFC11530 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */; };
+		E73D5C5DACCC48DC7DD57FDFE161B9B8 /* SocketParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C740E14BA0389B6A8FEE684EDA899D /* SocketParser.swift */; };
+		EB893BACD22A5DDEC3CC839C2739F862 /* UIView+XLFormAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C55B5154F5EB27E44267462E641CA1C /* UIView+XLFormAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC542F012FB8C2801BC2CCA787A54B12 /* XLFormSelectorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3FB48CCB4311B8F52CBCD5BCF2C979 /* XLFormSelectorCell.m */; };
+		EC6602771D14B009FEB1054561080DEB /* SocketAckEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3E1F56C720652D00B955F8D3D43A05 /* SocketAckEmitter.swift */; };
+		ECCE3AC2C4DBEBF0F55A4B58EE49A59C /* NSString+XLFormAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F5C3D89A2FC70348B8A89C48EA46EC89 /* NSString+XLFormAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED5DE6CADF65519A5EBCA04649E9E96D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */; };
+		F3FFF98CEA29691D829FD93B14291335 /* XLFormPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC859B524A0A334079527B6E100EB1C7 /* XLFormPickerCell.m */; };
+		FB4D9866EC326821649387768A7E2C5C /* NSObject+XLFormAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9808BD6737ED3A12F0EF9447AAABB67D /* NSObject+XLFormAdditions.m */; };
+		FBBD57DA03D72D1641FE3E6CA01ED4D5 /* XLFormTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A58D645EE0925F6B812E7AC22C5180 /* XLFormTextView.m */; };
+		FF712F817B6F646A9449786259846DB1 /* XLFormTextViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 00A3477FEF17AA3AC37795207F0442BD /* XLFormTextViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3126C09160DFAE1D7C96A1A573AAFC0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B13342D964E6DF6159708B3741FFB4D;
+			remoteInfo = XLForm;
+		};
+		51D171BFA3F56723B039E85DE55B4030 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 249EE13A1C7B5BEE21CBC16E04DB529E;
+			remoteInfo = "Socket.IO-Client-Swift";
+		};
+		DA2A51E0D507E98018D921B27EC66F73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E93E1DC65B1F2CE8EAE7C51768C4EA29;
+			remoteInfo = SwiftyJSON;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00A3477FEF17AA3AC37795207F0442BD /* XLFormTextViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormTextViewCell.h; path = XLForm/XL/Cell/XLFormTextViewCell.h; sourceTree = "<group>"; };
+		01D8B1591EBC13D16B6DA447D609E45E /* SocketEngineSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEngineSpec.swift; path = SocketIOClientSwift/SocketEngineSpec.swift; sourceTree = "<group>"; };
+		038A4DBA25762984C64A2E5D122384B0 /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = SocketIOClientSwift/WebSocket.swift; sourceTree = "<group>"; };
+		0398D0AFCE39AD4E356598CCBF8C4B7D /* NSArray+XLFormAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+XLFormAdditions.h"; path = "XLForm/XL/Helpers/NSArray+XLFormAdditions.h"; sourceTree = "<group>"; };
+		05B77F42D3706938BDB22F3297707105 /* Socket_IO_Client_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Socket_IO_Client_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		077B77E9ED4B1E09DAE27B29954F80D6 /* XLFormOptionsViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormOptionsViewController.m; path = XLForm/XL/Controllers/XLFormOptionsViewController.m; sourceTree = "<group>"; };
+		08C561CB1E844ACC718BFF3BB0D4510D /* XLFormDatePickerCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormDatePickerCell.m; path = XLForm/XL/Cell/XLFormDatePickerCell.m; sourceTree = "<group>"; };
+		0E466DEC69CFFF1754CEAB3337CFEA61 /* SocketEngineClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEngineClient.swift; path = SocketIOClientSwift/SocketEngineClient.swift; sourceTree = "<group>"; };
+		0FE2853F45F24A00A4898E4E4CF236FD /* XLFormRowDescriptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormRowDescriptor.h; path = XLForm/XL/Descriptors/XLFormRowDescriptor.h; sourceTree = "<group>"; };
+		11FAECFA6FB9EC0D740F1C389FF606D6 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		123765287DD5C8C54B53C6CCC1FA5489 /* XLFormDatePickerCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormDatePickerCell.h; path = XLForm/XL/Cell/XLFormDatePickerCell.h; sourceTree = "<group>"; };
+		19F2D44064B133245C3A1199DA963254 /* XLFormSwitchCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormSwitchCell.m; path = XLForm/XL/Cell/XLFormSwitchCell.m; sourceTree = "<group>"; };
+		19F5B4E850EFD3A6EB197F8DB534FD60 /* NSObject+XLFormAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+XLFormAdditions.h"; path = "XLForm/XL/Helpers/NSObject+XLFormAdditions.h"; sourceTree = "<group>"; };
+		1A090970FD495E5C5118B46FAF34B661 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A1E10A8DDD72E6B7C2D8A0F0366DA83 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		1BC797E5F90CB7484193A2ED090CDA6D /* SocketPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketPacket.swift; path = SocketIOClientSwift/SocketPacket.swift; sourceTree = "<group>"; };
+		1C55B5154F5EB27E44267462E641CA1C /* UIView+XLFormAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+XLFormAdditions.h"; path = "XLForm/XL/Helpers/UIView+XLFormAdditions.h"; sourceTree = "<group>"; };
+		1C8DC236C4CE49624443A8E303614147 /* XLFormButtonCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormButtonCell.m; path = XLForm/XL/Cell/XLFormButtonCell.m; sourceTree = "<group>"; };
+		1CDC438A3C5AE4A19B45EB15E0A61334 /* XLFormTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormTextView.h; path = XLForm/XL/Helpers/Views/XLFormTextView.h; sourceTree = "<group>"; };
+		1D46642519FF5D90C2BE07F0688DBF48 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		1D847D93686648236CAD8D38C84915A8 /* XLFormOptionsViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormOptionsViewController.h; path = XLForm/XL/Controllers/XLFormOptionsViewController.h; sourceTree = "<group>"; };
+		1EC85D35DA676818CBF64458D9A2B885 /* Socket.IO-Client-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Socket.IO-Client-Swift-prefix.pch"; sourceTree = "<group>"; };
+		1F0BBCE8450BD818ACBAA05CADFA1157 /* XLFormRightDetailCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormRightDetailCell.m; path = XLForm/XL/Helpers/Views/XLFormRightDetailCell.m; sourceTree = "<group>"; };
+		1FF93C0577B508FACBD94C1AF6868587 /* SocketLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketLogger.swift; path = SocketIOClientSwift/SocketLogger.swift; sourceTree = "<group>"; };
+		21F97402378705E17263CB886F9FED1A /* XLFormRegexValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormRegexValidator.h; path = XLForm/XL/Validation/XLFormRegexValidator.h; sourceTree = "<group>"; };
+		22ED23A1F4DB2384C48C24B4E4CA6764 /* XLFormStepCounterCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormStepCounterCell.h; path = XLForm/XL/Cell/XLFormStepCounterCell.h; sourceTree = "<group>"; };
+		23B3C2F7A60189AA38D256A0120B8730 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		27DDE1552820268173A5CA2A9E0EBC9A /* XLFormSegmentedCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormSegmentedCell.h; path = XLForm/XL/Cell/XLFormSegmentedCell.h; sourceTree = "<group>"; };
+		284AE9D97C316B78F190F4FD5AEC0DD2 /* XLFormSwitchCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormSwitchCell.h; path = XLForm/XL/Cell/XLFormSwitchCell.h; sourceTree = "<group>"; };
+		2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		2C4ADA856F31D773D350005C064CB367 /* SwiftRegex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftRegex.swift; path = SocketIOClientSwift/SwiftRegex.swift; sourceTree = "<group>"; };
+		2D3FB48CCB4311B8F52CBCD5BCF2C979 /* XLFormSelectorCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormSelectorCell.m; path = XLForm/XL/Cell/XLFormSelectorCell.m; sourceTree = "<group>"; };
+		31FB63AE453CCBDFDCA92C05D555F594 /* NSArray+XLFormAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+XLFormAdditions.m"; path = "XLForm/XL/Helpers/NSArray+XLFormAdditions.m"; sourceTree = "<group>"; };
+		325AA35F30B6A57F2501C7C77008DCD3 /* XLFormDescriptorDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormDescriptorDelegate.h; path = XLForm/XL/Descriptors/XLFormDescriptorDelegate.h; sourceTree = "<group>"; };
+		35CCC8DC9ADC59906A8D1A6AD257BF5E /* XLForm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XLForm-dummy.m"; sourceTree = "<group>"; };
+		3BD3279220EB6E1FBE9D3D034BEA85DB /* XLFormRightDetailCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormRightDetailCell.h; path = XLForm/XL/Helpers/Views/XLFormRightDetailCell.h; sourceTree = "<group>"; };
+		3C5DB282EA5F8B6EA5C4CE535A39DED9 /* XLFormValidationStatus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormValidationStatus.m; path = XLForm/XL/Validation/XLFormValidationStatus.m; sourceTree = "<group>"; };
+		3F0E10EF5C1CCCDE1E705B79BFFD2027 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		402F3A0EAD69943FBBCA461FFA004459 /* SocketFixUTF8.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketFixUTF8.swift; path = SocketIOClientSwift/SocketFixUTF8.swift; sourceTree = "<group>"; };
+		40FB63875D9FF914A2B8AD549DF9C136 /* XLFormInlineSelectorCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormInlineSelectorCell.h; path = XLForm/XL/Cell/XLFormInlineSelectorCell.h; sourceTree = "<group>"; };
+		4394028FC2B379244EDC6C90C8041893 /* NSExpression+XLFormAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSExpression+XLFormAdditions.m"; path = "XLForm/XL/Helpers/NSExpression+XLFormAdditions.m"; sourceTree = "<group>"; };
+		49F0D2273B139E83F16C84D96FD64866 /* XLForm.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLForm.m; path = XLForm/XL/XLForm.m; sourceTree = "<group>"; };
+		4AE05644226B5DC837B09F5E62DE2DA4 /* SocketAnyEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketAnyEvent.swift; path = SocketIOClientSwift/SocketAnyEvent.swift; sourceTree = "<group>"; };
+		52865DD0D0F29DEDA0D798F274B239DA /* XLFormDateCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormDateCell.h; path = XLForm/XL/Cell/XLFormDateCell.h; sourceTree = "<group>"; };
+		52B239576CBF1CF766F2E9036AFD0BFF /* XLFormTextFieldCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormTextFieldCell.h; path = XLForm/XL/Cell/XLFormTextFieldCell.h; sourceTree = "<group>"; };
+		55A58D645EE0925F6B812E7AC22C5180 /* XLFormTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormTextView.m; path = XLForm/XL/Helpers/Views/XLFormTextView.m; sourceTree = "<group>"; };
+		58A4470C71BCC56BEDC14C2B1627ACD8 /* XLFormCheckCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormCheckCell.m; path = XLForm/XL/Cell/XLFormCheckCell.m; sourceTree = "<group>"; };
+		5A6575E91AE27538F69C42C54479942C /* Socket.IO-Client-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Socket.IO-Client-Swift-dummy.m"; sourceTree = "<group>"; };
+		5EA0C43B8FB4D6951D04F147513C86E2 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		6429A7CC34461C2B5C908960BB84671D /* XLFormValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormValidator.h; path = XLForm/XL/Validation/XLFormValidator.h; sourceTree = "<group>"; };
+		65792930709BDCCDAD85FE68A79A9066 /* XLFormValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormValidator.m; path = XLForm/XL/Validation/XLFormValidator.m; sourceTree = "<group>"; };
+		686E5BC50E5C600BBBADA38030DDF220 /* SocketIOClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketIOClient.swift; path = SocketIOClientSwift/SocketIOClient.swift; sourceTree = "<group>"; };
+		6B2BD104277DA17CBEA3125F645A26C3 /* NSExpression+XLFormAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSExpression+XLFormAdditions.h"; path = "XLForm/XL/Helpers/NSExpression+XLFormAdditions.h"; sourceTree = "<group>"; };
+		6F75D804608C3CD8F111F445FCDAFCFE /* SocketTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketTypes.swift; path = SocketIOClientSwift/SocketTypes.swift; sourceTree = "<group>"; };
+		70814D52D20F07652CE527453CA178CE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70E9E437794F154ACCE18D87BE83EF45 /* XLFormOptionsObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormOptionsObject.h; path = XLForm/XL/Controllers/XLFormOptionsObject.h; sourceTree = "<group>"; };
+		7649A1B7B4306EAE979CBB6305692A79 /* XLFormLeftRightSelectorCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormLeftRightSelectorCell.m; path = XLForm/XL/Cell/XLFormLeftRightSelectorCell.m; sourceTree = "<group>"; };
+		77B42825FB0B5A3D416781119FF8C22B /* NSString+XLFormAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+XLFormAdditions.m"; path = "XLForm/XL/Helpers/NSString+XLFormAdditions.m"; sourceTree = "<group>"; };
+		786CCDB126351AB5E335A3DCCA1C20A1 /* XLFormRegexValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormRegexValidator.m; path = XLForm/XL/Validation/XLFormRegexValidator.m; sourceTree = "<group>"; };
+		79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
+		7F79ACD206D7284CF469DA6B24AFACE9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		7FB9FAB0FD9B62025236D9D478CB6A17 /* XLFormLeftRightSelectorCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormLeftRightSelectorCell.h; path = XLForm/XL/Cell/XLFormLeftRightSelectorCell.h; sourceTree = "<group>"; };
+		804466E016D0BC4CC82710879ACAA959 /* XLForm-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XLForm-prefix.pch"; sourceTree = "<group>"; };
+		81E976C8F41182007A5862A74B27E2D3 /* SocketEnginePacketType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEnginePacketType.swift; path = SocketIOClientSwift/SocketEnginePacketType.swift; sourceTree = "<group>"; };
+		822DBCF4ADE3DF76A2E88ADCF1ECDFA8 /* XLFormSelectorCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormSelectorCell.h; path = XLForm/XL/Cell/XLFormSelectorCell.h; sourceTree = "<group>"; };
+		8503200FA34E9E892E952C4D74A57575 /* XLFormDateCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormDateCell.m; path = XLForm/XL/Cell/XLFormDateCell.m; sourceTree = "<group>"; };
+		859C1686EA9A975E37983ECC2B42C0B0 /* XLFormRowDescriptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormRowDescriptor.m; path = XLForm/XL/Descriptors/XLFormRowDescriptor.m; sourceTree = "<group>"; };
+		87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		87FC4114F882F53167A84BCA2E2F5F3E /* XLForm-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XLForm-umbrella.h"; sourceTree = "<group>"; };
+		8912D87C88450BE62CDE64F6B4BB2611 /* XLFormTextViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormTextViewCell.m; path = XLForm/XL/Cell/XLFormTextViewCell.m; sourceTree = "<group>"; };
+		894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		898FAB4950D5EC47366B036F095D3084 /* XLFormSectionDescriptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormSectionDescriptor.h; path = XLForm/XL/Descriptors/XLFormSectionDescriptor.h; sourceTree = "<group>"; };
+		8A8A8FAB00CCB846E033E80FE6E5B63C /* XLFormDescriptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormDescriptor.m; path = XLForm/XL/Descriptors/XLFormDescriptor.m; sourceTree = "<group>"; };
+		8B83DDEDB3B95789CC3B432D92493937 /* XLFormInlineRowDescriptorCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormInlineRowDescriptorCell.h; path = XLForm/XL/Cell/XLFormInlineRowDescriptorCell.h; sourceTree = "<group>"; };
+		8BF0F7445FF5B27813802F1C00C95277 /* XLFormButtonCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormButtonCell.h; path = XLForm/XL/Cell/XLFormButtonCell.h; sourceTree = "<group>"; };
+		8D350D8CFC327D1B7985F4F6C0600926 /* XLFormSectionDescriptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormSectionDescriptor.m; path = XLForm/XL/Descriptors/XLFormSectionDescriptor.m; sourceTree = "<group>"; };
+		90ADCE360385DA55C5347ACB163AB534 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		911886C6452DFE6C6CE0A71598CE2261 /* XLFormSliderCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormSliderCell.h; path = XLForm/XL/Cell/XLFormSliderCell.h; sourceTree = "<group>"; };
+		929A6C58E7A71187E11F36576DE449A5 /* SocketStringReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketStringReader.swift; path = SocketIOClientSwift/SocketStringReader.swift; sourceTree = "<group>"; };
+		95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		962BD3A1BEC1A23C872008891C42D32C /* UIView+XLFormAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+XLFormAdditions.m"; path = "XLForm/XL/Helpers/UIView+XLFormAdditions.m"; sourceTree = "<group>"; };
+		9730E50488F32475617CF3E474402C43 /* XLForm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLForm.h; path = XLForm/XL/XLForm.h; sourceTree = "<group>"; };
+		976FFAF04BAF415E4F9C5C1DFF1A1DA7 /* XLFormRightImageButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormRightImageButton.h; path = XLForm/XL/Helpers/Views/XLFormRightImageButton.h; sourceTree = "<group>"; };
+		977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		9808BD6737ED3A12F0EF9447AAABB67D /* NSObject+XLFormAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+XLFormAdditions.m"; path = "XLForm/XL/Helpers/NSObject+XLFormAdditions.m"; sourceTree = "<group>"; };
+		9BE4F6F477527FCFB099B298C7EA4AEF /* XLFormTextFieldCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormTextFieldCell.m; path = XLForm/XL/Cell/XLFormTextFieldCell.m; sourceTree = "<group>"; };
+		A31C7B0D1332BFD57B1A461AB31BA8F8 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		AB23ED9441AA1568BEEA2D20957BBAFA /* XLFormRowDescriptorViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormRowDescriptorViewController.h; path = XLForm/XL/Controllers/XLFormRowDescriptorViewController.h; sourceTree = "<group>"; };
+		AC73C149042E527F22C430E5536A3AE9 /* XLForm.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = XLForm.bundle; path = XLForm/XLForm.bundle; sourceTree = "<group>"; };
+		B21EDE0A35C50B2CB711F896CEAD94BE /* SocketIOClientOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketIOClientOption.swift; path = SocketIOClientSwift/SocketIOClientOption.swift; sourceTree = "<group>"; };
+		B236E1F6CC4FED89A1BE16591B565665 /* XLFormOptionsObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormOptionsObject.m; path = XLForm/XL/Controllers/XLFormOptionsObject.m; sourceTree = "<group>"; };
+		B2E05660FD1C41721DAD15BC04FB0783 /* XLFormDescriptorCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormDescriptorCell.h; path = XLForm/XL/Cell/XLFormDescriptorCell.h; sourceTree = "<group>"; };
+		B3D8363BF24FADC7F201E95815ACCA70 /* XLFormValidatorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormValidatorProtocol.h; path = XLForm/XL/Validation/XLFormValidatorProtocol.h; sourceTree = "<group>"; };
+		B5063E44C5A67C4C265D28C2CDF4900F /* SocketEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEngine.swift; path = SocketIOClientSwift/SocketEngine.swift; sourceTree = "<group>"; };
+		B5B45293C4D77BCB9255787E7524A5CB /* NSPredicate+XLFormAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSPredicate+XLFormAdditions.h"; path = "XLForm/XL/Helpers/NSPredicate+XLFormAdditions.h"; sourceTree = "<group>"; };
+		B65F579A4688C332E6F54FEC61C05FFF /* XLFormCheckCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormCheckCell.h; path = XLForm/XL/Cell/XLFormCheckCell.h; sourceTree = "<group>"; };
+		B82231AFD04D7668B059B50D375CB473 /* XLForm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = XLForm.modulemap; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BB123F0D10EF5D70FF82B04348B0BFBC /* XLFormDescriptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormDescriptor.h; path = XLForm/XL/Descriptors/XLFormDescriptor.h; sourceTree = "<group>"; };
+		BC859B524A0A334079527B6E100EB1C7 /* XLFormPickerCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormPickerCell.m; path = XLForm/XL/Cell/XLFormPickerCell.m; sourceTree = "<group>"; };
+		BDB16E4D370BAB1778ED14086C9B8F98 /* XLFormSegmentedCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormSegmentedCell.m; path = XLForm/XL/Cell/XLFormSegmentedCell.m; sourceTree = "<group>"; };
+		BDDF1745F8981406EEA1AA97B41398EB /* XLFormRightImageButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormRightImageButton.m; path = XLForm/XL/Helpers/Views/XLFormRightImageButton.m; sourceTree = "<group>"; };
+		C2681F81DC929C7D3425B087E4E6BF32 /* XLFormValidationStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormValidationStatus.h; path = XLForm/XL/Validation/XLFormValidationStatus.h; sourceTree = "<group>"; };
+		C485D05E0C31387ADB74153F7275DBF7 /* XLFormRowNavigationAccessoryView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormRowNavigationAccessoryView.h; path = XLForm/XL/Helpers/Views/XLFormRowNavigationAccessoryView.h; sourceTree = "<group>"; };
+		C4D01AD718DE69D61F00BFA0C9210C66 /* SocketAckManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketAckManager.swift; path = SocketIOClientSwift/SocketAckManager.swift; sourceTree = "<group>"; };
+		CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		CC572ACC6F8B0FF8FD5B949D26E050DE /* XLFormInlineSelectorCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormInlineSelectorCell.m; path = XLForm/XL/Cell/XLFormInlineSelectorCell.m; sourceTree = "<group>"; };
+		D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D09EAA4395E5F8FA979EE00031D1A7B8 /* XLForm.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XLForm.xcconfig; sourceTree = "<group>"; };
+		D22A789DD141EAD79535332B357C1178 /* XLFormBaseCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormBaseCell.m; path = XLForm/XL/Cell/XLFormBaseCell.m; sourceTree = "<group>"; };
+		D6C8ADA17D750E468F6597E51B7CB589 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7BD224372A607C72CB64B902596E710 /* Socket.IO-Client-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Socket.IO-Client-Swift-umbrella.h"; sourceTree = "<group>"; };
+		D9195AD94E1DC270564C041CE382CEF2 /* XLFormPickerCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormPickerCell.h; path = XLForm/XL/Cell/XLFormPickerCell.h; sourceTree = "<group>"; };
+		DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		DFD7B9641BDED9B685F43E6CAA4AE5DA /* SocketIOClientStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketIOClientStatus.swift; path = SocketIOClientSwift/SocketIOClientStatus.swift; sourceTree = "<group>"; };
+		E22BFEB0C61C7655640DFA385C33A58F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4D04EFA7B86AA3CC624227B39F068A8 /* XLForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XLForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6C740E14BA0389B6A8FEE684EDA899D /* SocketParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketParser.swift; path = SocketIOClientSwift/SocketParser.swift; sourceTree = "<group>"; };
+		E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E928F238BE972D1A359A16A4DC85F7AA /* XLFormBaseCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormBaseCell.h; path = XLForm/XL/Cell/XLFormBaseCell.h; sourceTree = "<group>"; };
+		EC680D62573682E0FC52AFBDDB080B0F /* NSPredicate+XLFormAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSPredicate+XLFormAdditions.m"; path = "XLForm/XL/Helpers/NSPredicate+XLFormAdditions.m"; sourceTree = "<group>"; };
+		ED40B850DFCFAF658D87B8AA43FC4B08 /* Socket.IO-Client-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Socket.IO-Client-Swift.modulemap"; sourceTree = "<group>"; };
+		EDEAA180F35E8682DB84E7F1365AE0F7 /* XLFormViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XLFormViewController.h; path = XLForm/XL/Controllers/XLFormViewController.h; sourceTree = "<group>"; };
+		EE8954B7493A6AFBD374A68DC58DA0B0 /* XLFormViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormViewController.m; path = XLForm/XL/Controllers/XLFormViewController.m; sourceTree = "<group>"; };
+		EF1878573DB1F4C2FE0BC48079D59127 /* XLFormRowNavigationAccessoryView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormRowNavigationAccessoryView.m; path = XLForm/XL/Helpers/Views/XLFormRowNavigationAccessoryView.m; sourceTree = "<group>"; };
+		F04F9D71EC1C02C042EF86AA4BAF7208 /* XLFormStepCounterCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormStepCounterCell.m; path = XLForm/XL/Cell/XLFormStepCounterCell.m; sourceTree = "<group>"; };
+		F5C3D89A2FC70348B8A89C48EA46EC89 /* NSString+XLFormAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+XLFormAdditions.h"; path = "XLForm/XL/Helpers/NSString+XLFormAdditions.h"; sourceTree = "<group>"; };
+		F5E2F57F1700C7DA8AD0D1AA038A0482 /* Socket.IO-Client-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Socket.IO-Client-Swift.xcconfig"; sourceTree = "<group>"; };
+		F6C024A0E6B598C26C41499355CE3734 /* SocketEventHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketEventHandler.swift; path = SocketIOClientSwift/SocketEventHandler.swift; sourceTree = "<group>"; };
+		FC3E1F56C720652D00B955F8D3D43A05 /* SocketAckEmitter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketAckEmitter.swift; path = SocketIOClientSwift/SocketAckEmitter.swift; sourceTree = "<group>"; };
+		FE15353F807C7E65DC2C8E6030539DED /* XLFormSliderCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XLFormSliderCell.m; path = XLForm/XL/Cell/XLFormSliderCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A1A08E5C0016DDB0F18D8B71B53B6FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CBEE0B3B9A9FAC2485587DA4268EB11 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		668AF86A537AC5625A849B3B4FA4455A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED5DE6CADF65519A5EBCA04649E9E96D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D23EE2C47013924B6C7C1B9598794596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B865E7043C73580788D32149A28339D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB1C9E44F25785C34B884AAF7C2EE404 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F66797207EFBB09DE416B320A7B5B46 /* CoreGraphics.framework in Frameworks */,
+				DF67C56264DC0306133235B021FD383F /* Foundation.framework in Frameworks */,
+				578B7BCA865B9E6B1FD5A120B5130747 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A4FBD5031028A978486056C6198B31C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6C8ADA17D750E468F6597E51B7CB589 /* Info.plist */,
+				ED40B850DFCFAF658D87B8AA43FC4B08 /* Socket.IO-Client-Swift.modulemap */,
+				F5E2F57F1700C7DA8AD0D1AA038A0482 /* Socket.IO-Client-Swift.xcconfig */,
+				5A6575E91AE27538F69C42C54479942C /* Socket.IO-Client-Swift-dummy.m */,
+				1EC85D35DA676818CBF64458D9A2B885 /* Socket.IO-Client-Swift-prefix.pch */,
+				D7BD224372A607C72CB64B902596E710 /* Socket.IO-Client-Swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Socket.IO-Client-Swift";
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E35B3E289DB984DA75A774080D293670 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		411029B5A458FD2BBA1852A3BF235EDD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AC73C149042E527F22C430E5536A3AE9 /* XLForm.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4DB170AEA9A84567CA023F961384B88C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E22BFEB0C61C7655640DFA385C33A58F /* Info.plist */,
+				5EA0C43B8FB4D6951D04F147513C86E2 /* SwiftyJSON.modulemap */,
+				3F0E10EF5C1CCCDE1E705B79BFFD2027 /* SwiftyJSON.xcconfig */,
+				1D46642519FF5D90C2BE07F0688DBF48 /* SwiftyJSON-dummy.m */,
+				1A1E10A8DDD72E6B7C2D8A0F0366DA83 /* SwiftyJSON-prefix.pch */,
+				90ADCE360385DA55C5347ACB163AB534 /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		75D98FF52E597A11900E131B6C4E1ADA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */,
+				79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */,
+				D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */,
+				87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */,
+				894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */,
+				E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */,
+				CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */,
+				2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */,
+				977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */,
+				DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				E7C74A368C3361E98629AA960E03D71C /* Pods */,
+				B9644087E9F1A010B73B98E4D3AC22E0 /* Products */,
+				B7B80995527643776607AFFA75B91E24 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8D8D3FD3E7CF77F7680ED048A6CE0346 /* Socket.IO-Client-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				FC3E1F56C720652D00B955F8D3D43A05 /* SocketAckEmitter.swift */,
+				C4D01AD718DE69D61F00BFA0C9210C66 /* SocketAckManager.swift */,
+				4AE05644226B5DC837B09F5E62DE2DA4 /* SocketAnyEvent.swift */,
+				B5063E44C5A67C4C265D28C2CDF4900F /* SocketEngine.swift */,
+				0E466DEC69CFFF1754CEAB3337CFEA61 /* SocketEngineClient.swift */,
+				81E976C8F41182007A5862A74B27E2D3 /* SocketEnginePacketType.swift */,
+				01D8B1591EBC13D16B6DA447D609E45E /* SocketEngineSpec.swift */,
+				F6C024A0E6B598C26C41499355CE3734 /* SocketEventHandler.swift */,
+				402F3A0EAD69943FBBCA461FFA004459 /* SocketFixUTF8.swift */,
+				686E5BC50E5C600BBBADA38030DDF220 /* SocketIOClient.swift */,
+				B21EDE0A35C50B2CB711F896CEAD94BE /* SocketIOClientOption.swift */,
+				DFD7B9641BDED9B685F43E6CAA4AE5DA /* SocketIOClientStatus.swift */,
+				1FF93C0577B508FACBD94C1AF6868587 /* SocketLogger.swift */,
+				1BC797E5F90CB7484193A2ED090CDA6D /* SocketPacket.swift */,
+				E6C740E14BA0389B6A8FEE684EDA899D /* SocketParser.swift */,
+				929A6C58E7A71187E11F36576DE449A5 /* SocketStringReader.swift */,
+				6F75D804608C3CD8F111F445FCDAFCFE /* SocketTypes.swift */,
+				2C4ADA856F31D773D350005C064CB367 /* SwiftRegex.swift */,
+				038A4DBA25762984C64A2E5D122384B0 /* WebSocket.swift */,
+				0A4FBD5031028A978486056C6198B31C /* Support Files */,
+			);
+			path = "Socket.IO-Client-Swift";
+			sourceTree = "<group>";
+		};
+		8F6553BA85492943F456D3D9DF3231C5 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				A31C7B0D1332BFD57B1A461AB31BA8F8 /* SwiftyJSON.swift */,
+				4DB170AEA9A84567CA023F961384B88C /* Support Files */,
+			);
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		B7B80995527643776607AFFA75B91E24 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				75D98FF52E597A11900E131B6C4E1ADA /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B9644087E9F1A010B73B98E4D3AC22E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A090970FD495E5C5118B46FAF34B661 /* Pods.framework */,
+				05B77F42D3706938BDB22F3297707105 /* Socket_IO_Client_Swift.framework */,
+				11FAECFA6FB9EC0D740F1C389FF606D6 /* SwiftyJSON.framework */,
+				E4D04EFA7B86AA3CC624227B39F068A8 /* XLForm.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D69F978200C8A20BDF83995EB2D7F43C /* XLForm */ = {
+			isa = PBXGroup;
+			children = (
+				0398D0AFCE39AD4E356598CCBF8C4B7D /* NSArray+XLFormAdditions.h */,
+				31FB63AE453CCBDFDCA92C05D555F594 /* NSArray+XLFormAdditions.m */,
+				6B2BD104277DA17CBEA3125F645A26C3 /* NSExpression+XLFormAdditions.h */,
+				4394028FC2B379244EDC6C90C8041893 /* NSExpression+XLFormAdditions.m */,
+				19F5B4E850EFD3A6EB197F8DB534FD60 /* NSObject+XLFormAdditions.h */,
+				9808BD6737ED3A12F0EF9447AAABB67D /* NSObject+XLFormAdditions.m */,
+				B5B45293C4D77BCB9255787E7524A5CB /* NSPredicate+XLFormAdditions.h */,
+				EC680D62573682E0FC52AFBDDB080B0F /* NSPredicate+XLFormAdditions.m */,
+				F5C3D89A2FC70348B8A89C48EA46EC89 /* NSString+XLFormAdditions.h */,
+				77B42825FB0B5A3D416781119FF8C22B /* NSString+XLFormAdditions.m */,
+				1C55B5154F5EB27E44267462E641CA1C /* UIView+XLFormAdditions.h */,
+				962BD3A1BEC1A23C872008891C42D32C /* UIView+XLFormAdditions.m */,
+				9730E50488F32475617CF3E474402C43 /* XLForm.h */,
+				49F0D2273B139E83F16C84D96FD64866 /* XLForm.m */,
+				E928F238BE972D1A359A16A4DC85F7AA /* XLFormBaseCell.h */,
+				D22A789DD141EAD79535332B357C1178 /* XLFormBaseCell.m */,
+				8BF0F7445FF5B27813802F1C00C95277 /* XLFormButtonCell.h */,
+				1C8DC236C4CE49624443A8E303614147 /* XLFormButtonCell.m */,
+				B65F579A4688C332E6F54FEC61C05FFF /* XLFormCheckCell.h */,
+				58A4470C71BCC56BEDC14C2B1627ACD8 /* XLFormCheckCell.m */,
+				52865DD0D0F29DEDA0D798F274B239DA /* XLFormDateCell.h */,
+				8503200FA34E9E892E952C4D74A57575 /* XLFormDateCell.m */,
+				123765287DD5C8C54B53C6CCC1FA5489 /* XLFormDatePickerCell.h */,
+				08C561CB1E844ACC718BFF3BB0D4510D /* XLFormDatePickerCell.m */,
+				BB123F0D10EF5D70FF82B04348B0BFBC /* XLFormDescriptor.h */,
+				8A8A8FAB00CCB846E033E80FE6E5B63C /* XLFormDescriptor.m */,
+				B2E05660FD1C41721DAD15BC04FB0783 /* XLFormDescriptorCell.h */,
+				325AA35F30B6A57F2501C7C77008DCD3 /* XLFormDescriptorDelegate.h */,
+				8B83DDEDB3B95789CC3B432D92493937 /* XLFormInlineRowDescriptorCell.h */,
+				40FB63875D9FF914A2B8AD549DF9C136 /* XLFormInlineSelectorCell.h */,
+				CC572ACC6F8B0FF8FD5B949D26E050DE /* XLFormInlineSelectorCell.m */,
+				7FB9FAB0FD9B62025236D9D478CB6A17 /* XLFormLeftRightSelectorCell.h */,
+				7649A1B7B4306EAE979CBB6305692A79 /* XLFormLeftRightSelectorCell.m */,
+				70E9E437794F154ACCE18D87BE83EF45 /* XLFormOptionsObject.h */,
+				B236E1F6CC4FED89A1BE16591B565665 /* XLFormOptionsObject.m */,
+				1D847D93686648236CAD8D38C84915A8 /* XLFormOptionsViewController.h */,
+				077B77E9ED4B1E09DAE27B29954F80D6 /* XLFormOptionsViewController.m */,
+				D9195AD94E1DC270564C041CE382CEF2 /* XLFormPickerCell.h */,
+				BC859B524A0A334079527B6E100EB1C7 /* XLFormPickerCell.m */,
+				21F97402378705E17263CB886F9FED1A /* XLFormRegexValidator.h */,
+				786CCDB126351AB5E335A3DCCA1C20A1 /* XLFormRegexValidator.m */,
+				3BD3279220EB6E1FBE9D3D034BEA85DB /* XLFormRightDetailCell.h */,
+				1F0BBCE8450BD818ACBAA05CADFA1157 /* XLFormRightDetailCell.m */,
+				976FFAF04BAF415E4F9C5C1DFF1A1DA7 /* XLFormRightImageButton.h */,
+				BDDF1745F8981406EEA1AA97B41398EB /* XLFormRightImageButton.m */,
+				0FE2853F45F24A00A4898E4E4CF236FD /* XLFormRowDescriptor.h */,
+				859C1686EA9A975E37983ECC2B42C0B0 /* XLFormRowDescriptor.m */,
+				AB23ED9441AA1568BEEA2D20957BBAFA /* XLFormRowDescriptorViewController.h */,
+				C485D05E0C31387ADB74153F7275DBF7 /* XLFormRowNavigationAccessoryView.h */,
+				EF1878573DB1F4C2FE0BC48079D59127 /* XLFormRowNavigationAccessoryView.m */,
+				898FAB4950D5EC47366B036F095D3084 /* XLFormSectionDescriptor.h */,
+				8D350D8CFC327D1B7985F4F6C0600926 /* XLFormSectionDescriptor.m */,
+				27DDE1552820268173A5CA2A9E0EBC9A /* XLFormSegmentedCell.h */,
+				BDB16E4D370BAB1778ED14086C9B8F98 /* XLFormSegmentedCell.m */,
+				822DBCF4ADE3DF76A2E88ADCF1ECDFA8 /* XLFormSelectorCell.h */,
+				2D3FB48CCB4311B8F52CBCD5BCF2C979 /* XLFormSelectorCell.m */,
+				911886C6452DFE6C6CE0A71598CE2261 /* XLFormSliderCell.h */,
+				FE15353F807C7E65DC2C8E6030539DED /* XLFormSliderCell.m */,
+				22ED23A1F4DB2384C48C24B4E4CA6764 /* XLFormStepCounterCell.h */,
+				F04F9D71EC1C02C042EF86AA4BAF7208 /* XLFormStepCounterCell.m */,
+				284AE9D97C316B78F190F4FD5AEC0DD2 /* XLFormSwitchCell.h */,
+				19F2D44064B133245C3A1199DA963254 /* XLFormSwitchCell.m */,
+				52B239576CBF1CF766F2E9036AFD0BFF /* XLFormTextFieldCell.h */,
+				9BE4F6F477527FCFB099B298C7EA4AEF /* XLFormTextFieldCell.m */,
+				1CDC438A3C5AE4A19B45EB15E0A61334 /* XLFormTextView.h */,
+				55A58D645EE0925F6B812E7AC22C5180 /* XLFormTextView.m */,
+				00A3477FEF17AA3AC37795207F0442BD /* XLFormTextViewCell.h */,
+				8912D87C88450BE62CDE64F6B4BB2611 /* XLFormTextViewCell.m */,
+				C2681F81DC929C7D3425B087E4E6BF32 /* XLFormValidationStatus.h */,
+				3C5DB282EA5F8B6EA5C4CE535A39DED9 /* XLFormValidationStatus.m */,
+				6429A7CC34461C2B5C908960BB84671D /* XLFormValidator.h */,
+				65792930709BDCCDAD85FE68A79A9066 /* XLFormValidator.m */,
+				B3D8363BF24FADC7F201E95815ACCA70 /* XLFormValidatorProtocol.h */,
+				EDEAA180F35E8682DB84E7F1365AE0F7 /* XLFormViewController.h */,
+				EE8954B7493A6AFBD374A68DC58DA0B0 /* XLFormViewController.m */,
+				411029B5A458FD2BBA1852A3BF235EDD /* Resources */,
+				DB85D4AB79EC52670D42A98625090921 /* Support Files */,
+			);
+			path = XLForm;
+			sourceTree = "<group>";
+		};
+		DB85D4AB79EC52670D42A98625090921 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				70814D52D20F07652CE527453CA178CE /* Info.plist */,
+				B82231AFD04D7668B059B50D375CB473 /* XLForm.modulemap */,
+				D09EAA4395E5F8FA979EE00031D1A7B8 /* XLForm.xcconfig */,
+				35CCC8DC9ADC59906A8D1A6AD257BF5E /* XLForm-dummy.m */,
+				804466E016D0BC4CC82710879ACAA959 /* XLForm-prefix.pch */,
+				87FC4114F882F53167A84BCA2E2F5F3E /* XLForm-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/XLForm";
+			sourceTree = "<group>";
+		};
+		E35B3E289DB984DA75A774080D293670 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				23B3C2F7A60189AA38D256A0120B8730 /* CoreGraphics.framework */,
+				95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */,
+				7F79ACD206D7284CF469DA6B24AFACE9 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E7C74A368C3361E98629AA960E03D71C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D8D3FD3E7CF77F7680ED048A6CE0346 /* Socket.IO-Client-Swift */,
+				8F6553BA85492943F456D3D9DF3231C5 /* SwiftyJSON */,
+				D69F978200C8A20BDF83995EB2D7F43C /* XLForm */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		389B875DD87FA08BD5DF8062652740B0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B78B7D28794C9D6FFA37FE2ACBF71F26 /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F5BD4A56491AEC30DDFD29B638AFEE9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B6255BD31EA5AA5D2B50AEE98DC65AF /* NSArray+XLFormAdditions.h in Headers */,
+				9A8CBA6105E377A73AD1D5400B9AB23F /* NSExpression+XLFormAdditions.h in Headers */,
+				BDCD688A2C2903473AD27473EEEAD526 /* NSObject+XLFormAdditions.h in Headers */,
+				2B9CDBB86A4B2D387098276861109287 /* NSPredicate+XLFormAdditions.h in Headers */,
+				ECCE3AC2C4DBEBF0F55A4B58EE49A59C /* NSString+XLFormAdditions.h in Headers */,
+				EB893BACD22A5DDEC3CC839C2739F862 /* UIView+XLFormAdditions.h in Headers */,
+				C1CE0754629261248685937CA0289342 /* XLForm-umbrella.h in Headers */,
+				0C4C4CD055380F815DE6720E163B5C76 /* XLForm.h in Headers */,
+				DA4197CEC2EEB5B8909BC43CEB4B5C52 /* XLFormBaseCell.h in Headers */,
+				358B5668B0973DC14731E9B1DB4F715A /* XLFormButtonCell.h in Headers */,
+				E00A39E8593196E86C1397DEC217EDDA /* XLFormCheckCell.h in Headers */,
+				B8E96E43C2B2CFF65FC8ADB9CF992168 /* XLFormDateCell.h in Headers */,
+				A16AE54472A00407F4CF9C4CD4D0CE4C /* XLFormDatePickerCell.h in Headers */,
+				8FD341A0E105C58D838E84C1FED93016 /* XLFormDescriptor.h in Headers */,
+				476B49DD3F8549895865358F918C2D91 /* XLFormDescriptorCell.h in Headers */,
+				BD6C03F1358F986C78D22B9881BB2C4E /* XLFormDescriptorDelegate.h in Headers */,
+				A4BA8DDECEDBDF61C4D9DF00C2CA6C5A /* XLFormInlineRowDescriptorCell.h in Headers */,
+				0E9B2E83B3793C88E61A651E623863D1 /* XLFormInlineSelectorCell.h in Headers */,
+				054FDC72BB1FB46901DC07395702C15E /* XLFormLeftRightSelectorCell.h in Headers */,
+				507307F7E1BAA0DEC52893C6FF69E244 /* XLFormOptionsObject.h in Headers */,
+				92220D0C9D1A45CFC2E0CF8EC4192743 /* XLFormOptionsViewController.h in Headers */,
+				E0E7E00028497B4D3ABF86F943E365D8 /* XLFormPickerCell.h in Headers */,
+				6723853ADB7B0D9E4FA154D0A653BE29 /* XLFormRegexValidator.h in Headers */,
+				1D6F2658772BC1571CD4B8291D09354C /* XLFormRightDetailCell.h in Headers */,
+				A09FA655357838B1413C1D28F10A1C81 /* XLFormRightImageButton.h in Headers */,
+				186341289B1B00526E0659D99A7EF545 /* XLFormRowDescriptor.h in Headers */,
+				067E8A9BA463BE560935125DEB6F9937 /* XLFormRowDescriptorViewController.h in Headers */,
+				985B49CE3F0313EB0BF8B0A9648AC6DD /* XLFormRowNavigationAccessoryView.h in Headers */,
+				CC997D813175597944D4A9B301D06608 /* XLFormSectionDescriptor.h in Headers */,
+				3B7FF88E2EF4247E554D2FF04DA8ECC4 /* XLFormSegmentedCell.h in Headers */,
+				E4838F6B8AF72DACFD27D9FE86F3A8CB /* XLFormSelectorCell.h in Headers */,
+				807D6D94D1412DB4098989DC62AEC796 /* XLFormSliderCell.h in Headers */,
+				B2263733C3AE005B16D4E040A947CDE7 /* XLFormStepCounterCell.h in Headers */,
+				5771B91D18F3951CC411EF6D31AE1B95 /* XLFormSwitchCell.h in Headers */,
+				A67159396E61C1B9C959809B8ADC904A /* XLFormTextFieldCell.h in Headers */,
+				D193501378E2D693070D57100F992C23 /* XLFormTextView.h in Headers */,
+				FF712F817B6F646A9449786259846DB1 /* XLFormTextViewCell.h in Headers */,
+				C2D613B620FD3B625F1E04BCA414817D /* XLFormValidationStatus.h in Headers */,
+				92DE1E8FD71454FFF118F79004C07358 /* XLFormValidator.h in Headers */,
+				2CBF2A23F805AEFEAFEAB4951ACCCA43 /* XLFormValidatorProtocol.h in Headers */,
+				97885F5764DE8CA2C449849F4D80A93B /* XLFormViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A63C3431A5413E7911DDB5674CCBC1F1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25A355D36EFAD5212A3A83B50F77D104 /* Socket.IO-Client-Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFC3312C6469E53EEEF3C0374C8D5A67 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE55937D023CAD9F855876D9BE37ED94 /* Pods-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		249EE13A1C7B5BEE21CBC16E04DB529E /* Socket.IO-Client-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 196EAD12E14B5CF1CA58D2540382ADCB /* Build configuration list for PBXNativeTarget "Socket.IO-Client-Swift" */;
+			buildPhases = (
+				7688C1E1673CC13782D511BB0A3A2C5C /* Sources */,
+				0A1A08E5C0016DDB0F18D8B71B53B6FF /* Frameworks */,
+				A63C3431A5413E7911DDB5674CCBC1F1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Socket.IO-Client-Swift";
+			productName = "Socket.IO-Client-Swift";
+			productReference = 05B77F42D3706938BDB22F3297707105 /* Socket_IO_Client_Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7B13342D964E6DF6159708B3741FFB4D /* XLForm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EEEB2D021A4EE8F434CC448A316228B /* Build configuration list for PBXNativeTarget "XLForm" */;
+			buildPhases = (
+				D11E5B9A5A8B5E3069700C10A855AC8F /* Sources */,
+				DB1C9E44F25785C34B884AAF7C2EE404 /* Frameworks */,
+				3F5BD4A56491AEC30DDFD29B638AFEE9 /* Headers */,
+				B10ABB5B8C56CE51F501EDC84721F358 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XLForm;
+			productName = XLForm;
+			productReference = E4D04EFA7B86AA3CC624227B39F068A8 /* XLForm.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E93E1DC65B1F2CE8EAE7C51768C4EA29 /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1188632AB697D642BF8A3615AAA5C490 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				ECA26C265AA31D8DEAA931E180A8145C /* Sources */,
+				D23EE2C47013924B6C7C1B9598794596 /* Frameworks */,
+				389B875DD87FA08BD5DF8062652740B0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = 11FAECFA6FB9EC0D740F1C389FF606D6 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EE62C4BFF22C517092799070D84B0B5D /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA06E23E8B18E07CAE5C93F0D0C39C41 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				4A9A9128FAC301831517C48859D83545 /* Sources */,
+				668AF86A537AC5625A849B3B4FA4455A /* Frameworks */,
+				DFC3312C6469E53EEEF3C0374C8D5A67 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0243E263E636DD8422DF7A495B992807 /* PBXTargetDependency */,
+				208019FCE0C9BDCEC1E12C361A26B053 /* PBXTargetDependency */,
+				D1E84DD9F7F25620A6E89D0D4CFE9B49 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 1A090970FD495E5C5118B46FAF34B661 /* Pods.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = B9644087E9F1A010B73B98E4D3AC22E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE62C4BFF22C517092799070D84B0B5D /* Pods */,
+				249EE13A1C7B5BEE21CBC16E04DB529E /* Socket.IO-Client-Swift */,
+				E93E1DC65B1F2CE8EAE7C51768C4EA29 /* SwiftyJSON */,
+				7B13342D964E6DF6159708B3741FFB4D /* XLForm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B10ABB5B8C56CE51F501EDC84721F358 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D4887ABD303A75683B52541212CCC36 /* XLForm.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A9A9128FAC301831517C48859D83545 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5790A3F540500C3DD36A62FAFC11530 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7688C1E1673CC13782D511BB0A3A2C5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C65D72C3FEBBA8A6C1FF3613E29AB244 /* Socket.IO-Client-Swift-dummy.m in Sources */,
+				EC6602771D14B009FEB1054561080DEB /* SocketAckEmitter.swift in Sources */,
+				C2C625F702C806AA22DC8221EB95DBC7 /* SocketAckManager.swift in Sources */,
+				7788D4D9528C3FF79BA6B40B1AD2A60E /* SocketAnyEvent.swift in Sources */,
+				B06ECC71B5E28798F6931480BE1DD12A /* SocketEngine.swift in Sources */,
+				5F7030F68750753CB0B4B5A4EF35881A /* SocketEngineClient.swift in Sources */,
+				9E1808C4D1B30EF21428D8B7CDF1BB1C /* SocketEnginePacketType.swift in Sources */,
+				2856FDA1A7D3263CF2ACE1D6F7C56AF5 /* SocketEngineSpec.swift in Sources */,
+				50B1BF7A3D9AA48F62F1F63E3D67973F /* SocketEventHandler.swift in Sources */,
+				B7AA51AF165F2D38EE38B5C7D748A479 /* SocketFixUTF8.swift in Sources */,
+				0B59DF37CF096A903905736B9247BEA0 /* SocketIOClient.swift in Sources */,
+				80F5229D59134DE9497F1E58F839DAA1 /* SocketIOClientOption.swift in Sources */,
+				D49D1FD91E098208E4A0C97FD870B920 /* SocketIOClientStatus.swift in Sources */,
+				B3600D7ACBA27609AEE2D5FCC910AD4C /* SocketLogger.swift in Sources */,
+				95E52F64DEB329AB17801AB0B82FEDCA /* SocketPacket.swift in Sources */,
+				E73D5C5DACCC48DC7DD57FDFE161B9B8 /* SocketParser.swift in Sources */,
+				CF711D830C2D5A70E000046A886E8854 /* SocketStringReader.swift in Sources */,
+				920A305190C486592F48BCF79A0CADD2 /* SocketTypes.swift in Sources */,
+				CBC708A48BC7D99D056772D6EF57EBDA /* SwiftRegex.swift in Sources */,
+				5E67A50F899DF055757396E5D080F24E /* WebSocket.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D11E5B9A5A8B5E3069700C10A855AC8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D546ADE125700B2C4EDAEA89DA6733D0 /* NSArray+XLFormAdditions.m in Sources */,
+				6EEC40C2FB97079EC5657595DD0A7F82 /* NSExpression+XLFormAdditions.m in Sources */,
+				FB4D9866EC326821649387768A7E2C5C /* NSObject+XLFormAdditions.m in Sources */,
+				0722314D81186044122462610E17E9D1 /* NSPredicate+XLFormAdditions.m in Sources */,
+				E08966247D6165230CBB9E97BA22AA06 /* NSString+XLFormAdditions.m in Sources */,
+				00D122C68E52B5F2DB4F154B6AF567D4 /* UIView+XLFormAdditions.m in Sources */,
+				E4156932505726D69F4C1207ABBC4B4D /* XLForm-dummy.m in Sources */,
+				89B7F159A602C21455F672A32C145405 /* XLForm.m in Sources */,
+				4620F5F300DBB13E27D17F5B6DCE2414 /* XLFormBaseCell.m in Sources */,
+				74021CC60A6A0446B2EBCF8D9F16E7DE /* XLFormButtonCell.m in Sources */,
+				A747A35D2E79DAD01F963F23F603FF3A /* XLFormCheckCell.m in Sources */,
+				81417DC1F0F7BC76A194EC2D4E8940CA /* XLFormDateCell.m in Sources */,
+				03A94F82911AE6A7CB3948692F7B30D4 /* XLFormDatePickerCell.m in Sources */,
+				4FC7CF8F43DD6D97FF8A3374E1D0C7DA /* XLFormDescriptor.m in Sources */,
+				3BE4F113E32E044283F62F6C7E80E161 /* XLFormInlineSelectorCell.m in Sources */,
+				17E8DBC563815A3B46A2EBF90C9AB3FE /* XLFormLeftRightSelectorCell.m in Sources */,
+				28A8664AA88FBE31489B23813495E9EA /* XLFormOptionsObject.m in Sources */,
+				B18126C13921A4F4BF0BEE1F3E51C80B /* XLFormOptionsViewController.m in Sources */,
+				F3FFF98CEA29691D829FD93B14291335 /* XLFormPickerCell.m in Sources */,
+				05C794A145C820D8E4106685FFACDB72 /* XLFormRegexValidator.m in Sources */,
+				774E2E3A2677589C43FA3AEEB63A9241 /* XLFormRightDetailCell.m in Sources */,
+				47FDED6567642DFC5EBD256D152447FA /* XLFormRightImageButton.m in Sources */,
+				51A3501B62B55377BFE25DD46081C7E0 /* XLFormRowDescriptor.m in Sources */,
+				1078680AEE42D1E656A2463BD0D0CFE9 /* XLFormRowNavigationAccessoryView.m in Sources */,
+				286F9CF6E02AA7D5D4E8726F7BCDF42F /* XLFormSectionDescriptor.m in Sources */,
+				7B5472862E476763660234E255946A61 /* XLFormSegmentedCell.m in Sources */,
+				EC542F012FB8C2801BC2CCA787A54B12 /* XLFormSelectorCell.m in Sources */,
+				B351F3580FA9B1E3A6B0A124E94B5F87 /* XLFormSliderCell.m in Sources */,
+				594FBF11308F8478EE15B0AB2D756115 /* XLFormStepCounterCell.m in Sources */,
+				2CEDD5796654AEC8CBBC4B546EAC9EFF /* XLFormSwitchCell.m in Sources */,
+				9650D5481852E335897DE46A12070605 /* XLFormTextFieldCell.m in Sources */,
+				FBBD57DA03D72D1641FE3E6CA01ED4D5 /* XLFormTextView.m in Sources */,
+				1A75E591737057C360CABCCEC3DCD8D7 /* XLFormTextViewCell.m in Sources */,
+				E003F3657AEF7121E9425F70FA496E63 /* XLFormValidationStatus.m in Sources */,
+				81EF80602C49A7132AD446D2D70E0669 /* XLFormValidator.m in Sources */,
+				2FAA3A04B5D31B1A415C1A8EF43B9458 /* XLFormViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA26C265AA31D8DEAA931E180A8145C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				991F7D4292BEC73D0FB9033C85F7EEC5 /* SwiftyJSON-dummy.m in Sources */,
+				B91B878D288F86478DF9814FF2659AA1 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0243E263E636DD8422DF7A495B992807 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Socket.IO-Client-Swift";
+			target = 249EE13A1C7B5BEE21CBC16E04DB529E /* Socket.IO-Client-Swift */;
+			targetProxy = 51D171BFA3F56723B039E85DE55B4030 /* PBXContainerItemProxy */;
+		};
+		208019FCE0C9BDCEC1E12C361A26B053 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = E93E1DC65B1F2CE8EAE7C51768C4EA29 /* SwiftyJSON */;
+			targetProxy = DA2A51E0D507E98018D921B27EC66F73 /* PBXContainerItemProxy */;
+		};
+		D1E84DD9F7F25620A6E89D0D4CFE9B49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XLForm;
+			target = 7B13342D964E6DF6159708B3741FFB4D /* XLForm */;
+			targetProxy = 3126C09160DFAE1D7C96A1A573AAFC0C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2B23EBF9F83E25D79D86CCCD57D794FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D09EAA4395E5F8FA979EE00031D1A7B8 /* XLForm.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/XLForm/XLForm-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XLForm/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XLForm/XLForm.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = XLForm;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		33775C179D7B958BE2E2C7D2DE8FB31C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		756D71401FCD1E5A1A71A7C1388A65AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D09EAA4395E5F8FA979EE00031D1A7B8 /* XLForm.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/XLForm/XLForm-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XLForm/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XLForm/XLForm.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = XLForm;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A16676E21D36A5DE1D1711335A02BDDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F0E10EF5C1CCCDE1E705B79BFFD2027 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C0F87B82F7BF810969F49CA6298829FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D28FE774D5CB7DE7B1DC2C8E489058F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5E2F57F1700C7DA8AD0D1AA038A0482 /* Socket.IO-Client-Swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Socket.IO-Client-Swift/Socket.IO-Client-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Socket.IO-Client-Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Socket.IO-Client-Swift/Socket.IO-Client-Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Socket_IO_Client_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D41C037B69D0094054F6388ED6E80D74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5E2F57F1700C7DA8AD0D1AA038A0482 /* Socket.IO-Client-Swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Socket.IO-Client-Swift/Socket.IO-Client-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Socket.IO-Client-Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Socket.IO-Client-Swift/Socket.IO-Client-Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Socket_IO_Client_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FB21AE5B8C4D94520DF1EBEEFD39F421 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F0E10EF5C1CCCDE1E705B79BFFD2027 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1188632AB697D642BF8A3615AAA5C490 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A16676E21D36A5DE1D1711335A02BDDE /* Debug */,
+				FB21AE5B8C4D94520DF1EBEEFD39F421 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		196EAD12E14B5CF1CA58D2540382ADCB /* Build configuration list for PBXNativeTarget "Socket.IO-Client-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D41C037B69D0094054F6388ED6E80D74 /* Debug */,
+				D28FE774D5CB7DE7B1DC2C8E489058F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EEEB2D021A4EE8F434CC448A316228B /* Build configuration list for PBXNativeTarget "XLForm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				756D71401FCD1E5A1A71A7C1388A65AE /* Debug */,
+				2B23EBF9F83E25D79D86CCCD57D794FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA06E23E8B18E07CAE5C93F0D0C39C41 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33775C179D7B958BE2E2C7D2DE8FB31C /* Debug */,
+				C0F87B82F7BF810969F49CA6298829FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
