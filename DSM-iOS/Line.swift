@@ -47,18 +47,24 @@ class Line {
         socket = SocketIOClient(socketURL: url, options: [.Log(false), .ForcePolling(true)])
         
         socket?.on("connect") {data, ack in
-            
-            print("socket connected")
+            self.events.trigger("connect", information: self.id)
+        }
+        socket?.on("disconnect") {data, ack in
+            self.events.trigger("disconnect", information: self.id)
+        }
+        socket?.on("error") {data, ack in
+            self.events.trigger("error", information: self.id)
         }
         
         socket?.on("setSession") { (data, ack) -> Void in
             self.session = JSON(data)[0]
-            self.events.trigger("setSession")
+            self.events.trigger("setSession", information: self.id)
         }
         socket?.on("setConfig") { (data, ack) -> Void in
             self.config = JSON(data)[0]
-            self.events.trigger("setConfig")
+            self.events.trigger("setConfig", information: self.id)
         }
+        
         
         // TODO... all methods
         

@@ -8,6 +8,7 @@
 
 import UIKit
 import XLForm
+import Socket_IO_Client_Swift
 
 class LinesViewController: XLFormViewController {
     
@@ -55,7 +56,26 @@ class LinesViewController: XLFormViewController {
             row.action.formBlock = { (descriptor: XLFormRowDescriptor!) -> Void in
                 self.tableView.selectRowAtIndexPath(nil, animated: true, scrollPosition: .None)
             }
+            row.disabled = true
             section.addFormRow(row)
+            
+            
+            line.events.listenTo("connect", action: { () -> () in
+                print(line.id)
+                self.form.formRowWithTag(line.id)?.disabled = false
+                self.tableView.reloadData()
+            })
+            line.events.listenTo("disconnect", action: { () -> () in
+                print(line.id)
+                self.form.formRowWithTag(line.id)?.disabled = true
+                self.tableView.reloadData()
+            })
+            line.events.listenTo("error", action: { () -> () in
+                print(line.id)
+                self.form.formRowWithTag(line.id)?.disabled = true
+                self.tableView.reloadData()
+            })
+            
         }
         
         
@@ -71,8 +91,10 @@ class LinesViewController: XLFormViewController {
         
         switch (indexPath.section, indexPath.row) {
         case (0, 0...lines.count):
-            let singleVC = SingleLineViewController(line: lines[indexPath.row])
-            self.navigationController?.pushViewController(singleVC, animated: true)
+            if lines[indexPath.row].socket?.status == SocketIOClientStatus.Connected {
+                let singleVC = SingleLineViewController(line: lines[indexPath.row])
+                self.navigationController?.pushViewController(singleVC, animated: true)
+            }
             
         default:
             break

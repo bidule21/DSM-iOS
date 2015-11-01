@@ -8,6 +8,7 @@
 
 import Foundation
 import XLForm
+import SwiftyJSON
 
 
 class SingleLineViewController: XLFormViewController {
@@ -22,6 +23,26 @@ class SingleLineViewController: XLFormViewController {
         self.init(nibName: nil, bundle: nil)
         
         self.line = line
+        
+        
+        
+        line.events.listenTo("setSession") { () -> () in
+            self.initializeForm()
+        }
+        line.events.listenTo("setConfig") { () -> () in
+            self.initializeForm()
+        }
+        
+        line.events.listenTo("disconnect", action: { () -> () in
+            self.navigationController?.popViewControllerAnimated(true)
+        })
+        line.events.listenTo("error", action: { () -> () in
+            self.navigationController?.popViewControllerAnimated(true)
+        })
+        
+        
+        
+        self.initializeForm()
     }
     
     
@@ -32,14 +53,12 @@ class SingleLineViewController: XLFormViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        line?.events.listenTo("setSession") { () -> () in
-            self.initializeForm()
-        }
-        line?.events.listenTo("setConfig") { () -> () in
-            self.initializeForm()
+        
+        if let session = line?.session {
+//            let f = Test_View(frame: CGRectMake(0, 0, view.frame.width, 500), session: session)
+//            view.addSubview(f)
         }
         
-        self.initializeForm()
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -72,6 +91,7 @@ class SingleLineViewController: XLFormViewController {
         form.addFormSection(section)
         
         
+        section.title = "Modus"
         
         // Disziplin
         row = XLFormRowDescriptor(tag: "disziplin", rowType: XLFormRowDescriptorTypeSelectorActionSheet, title: "Disziplin")
@@ -79,7 +99,6 @@ class SingleLineViewController: XLFormViewController {
         var disziplinenList: [XLFormOptionsObject] = []
         if let groups = line?.config?["disziplinen"]["groups"].arrayValue {
             for singleGroup in groups {
-                
                 for disziplinID in singleGroup["disziplinen"].arrayValue {
                     
                     let disziplin = line?.config?["disziplinen"]["all"][disziplinID.stringValue]
@@ -87,12 +106,9 @@ class SingleLineViewController: XLFormViewController {
                     let option = XLFormOptionsObject(value: disziplinID.stringValue, displayText: disziplin?["title"].stringValue)
                     disziplinenList.append(option)
                     
-                    
                     if (disziplinID.stringValue == line?.session?["disziplin"]["_id"].string) {
                         row.value = option
                     }
-//
-//                
                 }
             }
         }
@@ -131,6 +147,7 @@ class SingleLineViewController: XLFormViewController {
     
     
     override func formRowDescriptorValueHasChanged(formRow: XLFormRowDescriptor!, oldValue: AnyObject!, newValue: AnyObject!) {
+        print(newValue)
         switch (formRow.tag){
         case "part"?:
             if let option = formRow.value as? XLFormOptionsObject {
@@ -144,6 +161,97 @@ class SingleLineViewController: XLFormViewController {
             break
         }
     }
+    
+    
+    
+    
+    
+    class Test_View: UIView {
+        
+        var session: JSON?
+        
+//        override init(frame: CGRect) {
+//            super.init(frame: frame)
+//        }
+//        
+//        required init?(coder aDecoder: NSCoder) {
+//            super.init(coder: aDecoder)
+//        }
+        
+        convenience init(frame: CGRect, session: JSON){
+            self.init(frame: frame)
+            self.session = session
+        }
+        
+        override func drawRect(rect: CGRect) {
+            
+            print(session)
+            
+            let scheibe = session?["disziplin"]["scheibe"]
+            
+            /*
+            var lastRing = scheibe.ringe[scheibe.ringe.length-1]
+            
+            for (var i = scheibe.ringe.length-1; i >= 0; i--){
+            var ring = scheibe.ringe[i]
+            
+            context.globalAlpha = 1.0
+            context.fillStyle = ring.color;
+            context.beginPath();
+            context.arc(lastRing.width/2*zoom.scale+zoom.offset.x, lastRing.width/2*zoom.scale+zoom.offset.y, ring.width/2*zoom.scale, 0, 2*Math.PI);
+            context.closePath();
+            
+            context.fill();
+            context.strokeStyle = ring.textColor
+            context.lineWidth = 4;
+            context.stroke();
+            context.fillStyle = "black";
+            
+            if (ring.text == true){
+            context.font = "bold "+(scheibe.text.size*zoom.scale)+"px verdana, sans-serif";
+            context.fillStyle = ring.textColor
+            context.fillText(ring.value, (lastRing.width/2 - ring.width/2 + scheibe.text.left)*zoom.scale+zoom.offset.x, (lastRing.width/2+scheibe.text.width)*zoom.scale+zoom.offset.y);
+            context.fillText(ring.value, (lastRing.width/2 + ring.width/2 + scheibe.text.right)*zoom.scale+zoom.offset.x, (lastRing.width/2+scheibe.text.width)*zoom.scale+zoom.offset.y);
+            context.fillText(ring.value, (lastRing.width/2-scheibe.text.width)*zoom.scale+zoom.offset.x, (lastRing.width/2 + ring.width/2 + scheibe.text.down)*zoom.scale+zoom.offset.y);
+            context.fillText(ring.value, (lastRing.width/2-scheibe.text.width)*zoom.scale+zoom.offset.x, (lastRing.width/2 - ring.width/2 + scheibe.text.up)*zoom.scale+zoom.offset.y);
+            }
+            }
+            */
+            
+            if let ringe = scheibe?["ringe"].arrayValue {
+                let lastRing = ringe.last
+                
+                for ring in ringe {
+                    print(ring)
+                    
+//                    let radius = ring["width"].intValue/ 2*
+                    
+                    var path = UIBezierPath(ovalInRect: CGRect(x: 0, y: 0, width: 300, height: 300))
+                    UIColor.greenColor().setFill()
+                    path.fill()
+                    
+                }
+            }
+            
+            
+            
+            
+            
+//            let h = rect.height
+//            let w = rect.width
+//            var color:UIColor = UIColor.yellowColor()
+//            
+//            var drect = CGRect(x: (w * 0.25),y: (h * 0.25),width: (w * 0.5),height: (h * 0.5))
+//            var bpath:UIBezierPath = UIBezierPath(rect: drect)
+            
+//            color.set()
+//            bpath.stroke()
+            
+            
+        }
+        
+    }
+    
     
     
     
