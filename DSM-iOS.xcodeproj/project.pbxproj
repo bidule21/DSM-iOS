@@ -82,16 +82,48 @@
 		FB6FC1EF1BE5436A00D335D0 /* DSM-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				FB6FC1F01BE5436A00D335D0 /* AppDelegate.swift */,
-				FB6FC2041BE6405500D335D0 /* Line.swift */,
-				FB6FC1F41BE5436A00D335D0 /* LinesViewController.swift */,
-				FB6FC1F21BE5436A00D335D0 /* SingleLineViewController.swift */,
-				FB6FC2061BE646A600D335D0 /* Events.swift */,
+				FB6FC20B1BE8178300D335D0 /* AppDelegate */,
+				FB6FC20D1BE8179F00D335D0 /* API */,
+				FB6FC20C1BE8178B00D335D0 /* Single Line Control */,
+				FB6FC20A1BE8177700D335D0 /* Supporting Files */,
+			);
+			path = "DSM-iOS";
+			sourceTree = "<group>";
+		};
+		FB6FC20A1BE8177700D335D0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				FB6FC1F91BE5436A00D335D0 /* Assets.xcassets */,
 				FB6FC1FB1BE5436A00D335D0 /* LaunchScreen.storyboard */,
 				FB6FC1FE1BE5436A00D335D0 /* Info.plist */,
 			);
-			path = "DSM-iOS";
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB6FC20B1BE8178300D335D0 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FB6FC1F01BE5436A00D335D0 /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		FB6FC20C1BE8178B00D335D0 /* Single Line Control */ = {
+			isa = PBXGroup;
+			children = (
+				FB6FC1F41BE5436A00D335D0 /* LinesViewController.swift */,
+				FB6FC1F21BE5436A00D335D0 /* SingleLineViewController.swift */,
+			);
+			name = "Single Line Control";
+			sourceTree = "<group>";
+		};
+		FB6FC20D1BE8179F00D335D0 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FB6FC2041BE6405500D335D0 /* Line.swift */,
+				FB6FC2061BE646A600D335D0 /* Events.swift */,
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -16,6 +16,8 @@ class SingleLineViewController: XLFormViewController {
     
     var line: Line?
     
+    var updateing = false
+    
     
     // MARK: Init
     
@@ -25,12 +27,11 @@ class SingleLineViewController: XLFormViewController {
         self.line = line
         
         
-        
         line.events.listenTo("setSession") { () -> () in
-            self.initializeForm()
+            self.updateForm()
         }
         line.events.listenTo("setConfig") { () -> () in
-            self.initializeForm()
+            self.updateForm()
         }
         
         line.events.listenTo("disconnect", action: { () -> () in
@@ -39,7 +40,6 @@ class SingleLineViewController: XLFormViewController {
         line.events.listenTo("error", action: { () -> () in
             self.navigationController?.popViewControllerAnimated(true)
         })
-        
         
         
         self.initializeForm()
@@ -53,25 +53,17 @@ class SingleLineViewController: XLFormViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        if let session = line?.session {
+//        if let session = line?.session {
 //            let f = Test_View(frame: CGRectMake(0, 0, view.frame.width, 500), session: session)
 //            view.addSubview(f)
-        }
-        
+//        }
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-//        GAI.sharedInstance().trackScreenView("Acknowledgment")
-        
         self.title = line?.title
         
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.updateForm()
     }
     
     
@@ -87,15 +79,60 @@ class SingleLineViewController: XLFormViewController {
         
         form = XLFormDescriptor()
         
+        
+        
+        
         section = XLFormSectionDescriptor() as XLFormSectionDescriptor
         form.addFormSection(section)
-        
-        
         section.title = "Modus"
         
         // Disziplin
         row = XLFormRowDescriptor(tag: "disziplin", rowType: XLFormRowDescriptorTypeSelectorActionSheet, title: "Disziplin")
-        row.selectorOptions = []
+        section.addFormRow(row)
+        
+        
+        // Parts
+        row = XLFormRowDescriptor(tag: "part", rowType: XLFormRowDescriptorTypeSelectorActionSheet, title: "Part")
+        section.addFormRow(row)
+        
+        
+        
+        
+        
+        section = XLFormSectionDescriptor() as XLFormSectionDescriptor
+        form.addFormSection(section)
+        section.title = "Nachricht"
+        
+        // Nachricht
+        row = XLFormRowDescriptor(tag: "message", rowType: XLFormRowDescriptorTypeSelectorActionSheet, title: "Nachricht")
+        row.selectorOptions = [
+            XLFormOptionsObject(value: "sicherheit", displayText: "Sicherheit"),
+            XLFormOptionsObject(value: "pause", displayText: "Pause"),
+        ]
+        section.addFormRow(row)
+        
+        
+        // Nachricht ausblenden
+        row = XLFormRowDescriptor(tag: "hideMessage", rowType: XLFormRowDescriptorTypeButton, title: "Nachricht ausblenden")
+        row.action.formBlock = { form in
+            self.tableView.selectRowAtIndexPath(nil, animated: true, scrollPosition: .None)
+            self.line?.hideMessage()
+        }
+        section.addFormRow(row)
+        
+        
+        
+        
+        self.form = form
+        self.tableView?.reloadData()
+    }
+    
+    
+    func updateForm(){
+        self.updateing = true
+        
+        // Disziplin
+        var row = form.formRowWithTag("disziplin")
         var disziplinenList: [XLFormOptionsObject] = []
         if let groups = line?.config?["disziplinen"]["groups"].arrayValue {
             for singleGroup in groups {
@@ -107,47 +144,45 @@ class SingleLineViewController: XLFormViewController {
                     disziplinenList.append(option)
                     
                     if (disziplinID.stringValue == line?.session?["disziplin"]["_id"].string) {
-                        row.value = option
+                        row?.value = option
                     }
                 }
             }
         }
-        row.selectorOptions = disziplinenList
-        section.addFormRow(row)
+        row?.selectorOptions = disziplinenList
+        
         
         
         
         
         // Parts
-        row = XLFormRowDescriptor(tag: "part", rowType: XLFormRowDescriptorTypeSelectorActionSheet, title: "Part")
-        row.selectorOptions = []
+        row = form.formRowWithTag("part")
         var partsList: [XLFormOptionsObject] = []
         if let parts = line?.session?["disziplin"]["parts"].dictionaryValue {
             for (key, part) in parts {
                 let option = XLFormOptionsObject(value: key, displayText: part["title"].stringValue)
                 partsList.append(option)
                 if (key == line?.session?["type"].string) {
-                    row.value = option
+                    row?.value = option
                 }
             }
         }
-        row.selectorOptions = partsList
-        section.addFormRow(row)
+        row?.selectorOptions = partsList
         
         
         
         
-        
-        
-        
-        
-        self.form = form
         self.tableView?.reloadData()
+        
+        self.updateing = false
     }
     
     
     override func formRowDescriptorValueHasChanged(formRow: XLFormRowDescriptor!, oldValue: AnyObject!, newValue: AnyObject!) {
-        print(newValue)
+        if updateing {
+            return
+        }
+        
         switch (formRow.tag){
         case "part"?:
             if let option = formRow.value as? XLFormOptionsObject {
@@ -157,10 +192,42 @@ class SingleLineViewController: XLFormViewController {
             if let option = formRow.value as? XLFormOptionsObject {
                 line?.setDisziplin(option.valueData() as! String)
             }
+        case "message"?:
+            if let option = formRow.value?.valueData() as? String {
+                switch (option){
+                case "sicherheit":
+                    line?.showMessage("Sicherheit", type: Line.DSCAPIMethodMessage.danger)
+                case "pause":
+                    line?.showMessage("Pause", type: Line.DSCAPIMethodMessage.black)
+                default:
+                    break
+                }
+                formRow.value = nil
+            }
         default:
             break
         }
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -184,9 +251,6 @@ class SingleLineViewController: XLFormViewController {
         }
         
         override func drawRect(rect: CGRect) {
-            
-            print(session)
-            
             let scheibe = session?["disziplin"]["scheibe"]
             
             /*
